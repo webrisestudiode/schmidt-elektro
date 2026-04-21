@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt & Anfrage – Schmidt Elektro München</title>
+    <meta name="description" content="Kontaktieren Sie Schmidt Elektro München. Projektanfrage stellen, Bewerbung einreichen oder direkt anrufen. 24h Notdienst: 089 123456.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Notdienst Banner -->
+    <div class="emergency-banner">
+        <i class="fa-solid fa-bolt"></i>&nbsp; 24h Notdienst: <a href="tel:089123456">089 123456</a> – Jetzt anrufen!
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                Schmidt <span>Elektro</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html">Startseite</a>
+                <a href="leistungen.html">Leistungen</a>
+                <a href="ueber-uns.html">Über uns</a>
+                <a href="referenzen.html">Referenzen</a>
+                <a href="karriere.html">Karriere</a>
+                <a href="kontakt.html" class="active btn btn-primary btn-nav-cta" style="color:white; padding:11px 24px; font-size:0.95rem;">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Kontakt & Anfrage</h1>
+            <div class="breadcrumb"><a href="index.html">Startseite</a><span class="breadcrumb-sep">/</span> Kontakt</div>
+        </div>
+    </section>
+
+    <!-- Kontakt Hauptbereich -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="grid grid-2" style="gap:60px; align-items:start;">
+
+                <!-- Info Box -->
+                <div class="animate-on-scroll">
+                    <span class="section-eyebrow">Wir sind für Sie da</span>
+                    <h2>Sprechen Sie uns an</h2>
+                    <p>Beschreiben Sie uns Ihr Vorhaben – wir erstellen ein unverbindliches Festpreisangebot innerhalb von 24 Stunden.</p>
+
+                    <div class="contact-info-box" style="margin-top:32px;">
+                        <h3>Kontaktdaten</h3>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <div class="contact-info-label">Telefon</div>
+                                <div class="contact-info-val"><a href="tel:089123456">089 123456</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <div>
+                                <div class="contact-info-label">Notdienst (24/7)</div>
+                                <div class="contact-info-val"><a href="tel:089123456" style="color:var(--color-primary);">089 123456</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <div class="contact-info-label">E-Mail</div>
+                                <div class="contact-info-val"><a href="mailto:info@schmidt-elektro-beispiel.de">info@schmidt-elektro-beispiel.de</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <div class="contact-info-label">Adresse</div>
+                                <div class="contact-info-val">Elektrostraße 8<br>80331 München</div>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <div class="contact-info-label">Öffnungszeiten</div>
+                                <div class="contact-info-val">Mo–Fr: 7:30–18:00 Uhr<br>Notdienst: 24/7</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/4989123456?text=Hallo%20Schmidt%20Elektro%2C%20ich%20h%C3%A4tte%20eine%20Anfrage..." target="_blank" class="btn" style="margin-top:28px; background:#25D366; color:white; display:flex; align-items:center; gap:10px; width:fit-content;">
+                        <i class="fa-brands fa-whatsapp" style="font-size:1.4rem;"></i> Per WhatsApp schreiben
+                    </a>
+                </div>
+
+                <!-- Multi-Step Form -->
+                <div class="animate-on-scroll" style="transition-delay:0.15s;">
+                    <div class="multi-step-form">
+                        <form id="projekt-anfrage-form" action="https://formspree.io/f/IHRE_FORMSPREE_ID" method="POST">
+                            <input type="hidden" id="selected-service" name="leistung" value="">
+
+                            <!-- Progress Bar -->
+                            <div class="progress-bar-wrap" style="margin-bottom:52px;">
+                                <div class="progress-line-bg">
+                                    <div class="progress-line"></div>
+                                </div>
+                                <div class="step-wrap">
+                                    <div class="step-indicator active" id="step-ind-1"><span class="ind-num">1</span><span class="step-label">Leistung</span></div>
+                                </div>
+                                <div class="step-wrap">
+                                    <div class="step-indicator" id="step-ind-2"><span class="ind-num">2</span><span class="step-label">Projekt</span></div>
+                                </div>
+                                <div class="step-wrap">
+                                    <div class="step-indicator" id="step-ind-3"><span class="ind-num">3</span><span class="step-label">Kontakt</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Schritt 1: Leistung wählen -->
+                            <div class="form-step active">
+                                <h3 class="form-step-title">Schritt 1: Ihre Leistung</h3>
+                                <p class="form-step-subtitle">Welche Leistung benötigen Sie? Bitte wählen Sie aus.</p>
+                                <div class="service-selection-grid">
+                                    <div class="service-option" data-service="Elektroinstallation">
+                                        <i class="fa-solid fa-plug"></i>
+                                        <span>Elektroinstallation</span>
+                                    </div>
+                                    <div class="service-option" data-service="Photovoltaik & Solar">
+                                        <i class="fa-solid fa-solar-panel"></i>
+                                        <span>Photovoltaik</span>
+                                    </div>
+                                    <div class="service-option" data-service="Wallbox & E-Mobilität">
+                                        <i class="fa-solid fa-charging-station"></i>
+                                        <span>Wallbox</span>
+                                    </div>
+                                    <div class="service-option" data-service="Smart Home">
+                                        <i class="fa-solid fa-house-signal"></i>
+                                        <span>Smart Home</span>
+                                    </div>
+                                    <div class="service-option" data-service="Beleuchtung & LED">
+                                        <i class="fa-solid fa-lightbulb"></i>
+                                        <span>Beleuchtung</span>
+                                    </div>
+                                    <div class="service-option" data-service="Notdienst 24/7">
+                                        <i class="fa-solid fa-triangle-exclamation"></i>
+                                        <span>Notdienst</span>
+                                    </div>
+                                </div>
+                                <div class="form-actions" style="justify-content:flex-end;">
+                                    <button type="button" class="btn btn-primary btn-next">
+                                        Weiter <i class="fa-solid fa-arrow-right" style="margin-left:8px;"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Schritt 2: Projektdetails -->
+                            <div class="form-step">
+                                <h3 class="form-step-title">Schritt 2: Ihr Projekt</h3>
+                                <p class="form-step-subtitle">Helfen Sie uns, Ihr Projekt besser zu verstehen.</p>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="dringlichkeit">Wie dringend ist Ihr Anliegen? <span class="req">*</span></label>
+                                    <select id="dringlichkeit" name="dringlichkeit" class="form-control" required>
+                                        <option value="" disabled selected>Bitte auswählen...</option>
+                                        <option value="notfall">Notfall – heute noch</option>
+                                        <option value="diese-woche">Diese Woche</option>
+                                        <option value="1-3-monate">In 1–3 Monaten</option>
+                                        <option value="planung">Planung / Beratung</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="budget">Ungefähres Budget?</label>
+                                    <select id="budget" name="budget" class="form-control">
+                                        <option value="" disabled selected>Bitte auswählen...</option>
+                                        <option value="unter-1000">Unter 1.000 €</option>
+                                        <option value="1000-5000">1.000 – 5.000 €</option>
+                                        <option value="5000-15000">5.000 – 15.000 €</option>
+                                        <option value="ueber-15000">Über 15.000 €</option>
+                                        <option value="unklar">Noch unklar</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="projektbeschreibung">Beschreiben Sie Ihr Projekt so genau wie möglich <span class="req">*</span></label>
+                                    <textarea id="projektbeschreibung" name="projektbeschreibung" class="form-control" placeholder="z.B.: Ich möchte eine 10 kWp PV-Anlage auf meinem Einfamilienhaus installieren lassen. Das Hausdach ist ca. 80 m² groß und nach Süden ausgerichtet..." required></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Fotos oder Pläne hochladen (optional)</label>
+                                    <label class="file-upload-wrap" for="file-upload">
+                                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                                        <span class="file-label">Datei auswählen oder hier ablegen</span>
+                                        <input type="file" id="file-upload" name="anhang" accept="image/*,.pdf">
+                                    </label>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-outline btn-prev">
+                                        <i class="fa-solid fa-arrow-left" style="margin-right:8px;"></i> Zurück
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-next">
+                                        Weiter <i class="fa-solid fa-arrow-right" style="margin-left:8px;"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Schritt 3: Kontaktdaten -->
+                            <div class="form-step">
+                                <h3 class="form-step-title">Schritt 3: Ihre Kontaktdaten</h3>
+                                <p class="form-step-subtitle">Fast geschafft! Hinterlassen Sie Ihre Daten, wir melden uns innerhalb von 24 Stunden.</p>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="vorname">Vorname <span class="req">*</span></label>
+                                        <input type="text" id="vorname" name="vorname" class="form-control" placeholder="Max" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="nachname">Nachname <span class="req">*</span></label>
+                                        <input type="text" id="nachname" name="nachname" class="form-control" placeholder="Mustermann" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="telefon">Telefonnummer <span class="req">*</span></label>
+                                        <input type="tel" id="telefon" name="telefon" class="form-control" placeholder="089 12345678" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="email">E-Mail <span class="req">*</span></label>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="max@beispiel.de" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="projektadresse">Adresse des Projekts <span class="req">*</span></label>
+                                    <input type="text" id="projektadresse" name="projektadresse" class="form-control" placeholder="Musterstraße 12, 80331 München" required>
+                                </div>
+
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" id="datenschutz" name="datenschutz" required>
+                                    <label for="datenschutz">Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. <span class="req">*</span></label>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-outline btn-prev">
+                                        <i class="fa-solid fa-arrow-left" style="margin-right:8px;"></i> Zurück
+                                    </button>
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fa-solid fa-paper-plane" style="margin-right:10px;"></i> Jetzt kostenlos anfragen
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Karriere Teaser -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="animate-on-scroll" style="max-width:860px; margin:0 auto; background:var(--color-dark); border-radius:var(--border-radius-lg); overflow:hidden; display:flex; align-items:stretch; box-shadow:var(--shadow-lg); flex-wrap:wrap;">
+                <div style="flex:1; min-width:280px;">
+                    <img src="img/ueber-uns-und-karriere.jpg" alt="Elektriker bei der Arbeit – Schmidt Elektro Team" loading="lazy" style="width:100%; height:100%; min-height:300px; object-fit:cover; display:block;">
+                </div>
+                <div style="flex:1.2; min-width:280px; padding:52px 48px; display:flex; flex-direction:column; justify-content:center;">
+                    <span style="display:inline-block; background:rgba(232,18,10,0.2); color:var(--color-primary); font-size:0.82rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; padding:6px 16px; border-radius:50px; margin-bottom:20px;">Karriere</span>
+                    <h2 style="color:white; font-size:clamp(1.6rem,3vw,2.2rem); margin-bottom:16px;">Werde Teil unseres Teams</h2>
+                    <p style="color:rgba(255,255,255,0.75); font-size:1rem; margin-bottom:32px;">Wir suchen engagierte Elektriker, Elektromeister und Photovoltaik-Techniker für spannende Projekte in München. Faire Bezahlung, familiäres Umfeld und modernste Ausstattung warten auf dich.</p>
+                    <div style="display:flex; gap:14px; flex-wrap:wrap;">
+                        <a href="karriere.html" class="btn btn-primary">
+                            <i class="fa-solid fa-paper-plane" style="margin-right:8px;"></i> Jetzt bewerben
+                        </a>
+                        <a href="karriere.html#offene-stellen" class="btn btn-outline-white" style="padding:16px 28px;">
+                            Offene Stellen ansehen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo"><div class="logo-icon"><i class="fa-solid fa-bolt"></i></div> Schmidt <span>Elektro</span></div>
+                    <p class="footer-desc">Ihr zuverlässiger Elektromeisterbetrieb in München. Qualität und Festpreise seit 2001.</p>
+                </div>
+                <div>
+                    <h4>Kontakt</h4>
+                    <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span>Elektrostraße 8<br>80331 München</span></div>
+                    <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><a href="tel:089123456">089 123456</a></div>
+                    <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:info@schmidt-elektro-beispiel.de">info@schmidt-elektro-beispiel.de</a></div>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="leistungen.html">Leistungen</a></li>
+                        <li><a href="ueber-uns.html">Über uns</a></li>
+                        <li><a href="referenzen.html">Referenzen</a></li>
+                        <li><a href="karriere.html">Karriere</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Rechtliches</h4>
+                    <ul class="footer-links">
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2026 Schmidt Elektro München. Fiktives Beispielprojekt.</div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/4989123456?text=Hallo%20Schmidt%20Elektro%2C%20ich%20h%C3%A4tte%20eine%20Anfrage..." target="_blank" class="whatsapp-btn" aria-label="WhatsApp Kontakt">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <div id="cookie-banner" class="cookie-banner">
+        <div><h4>Wir verwenden Cookies</h4><p>Um unsere Website optimal zu gestalten, verwenden wir Cookies. <a href="datenschutz.html">Weitere Informationen</a>.</p></div>
+        <div><button id="accept-cookies" class="btn btn-primary" style="padding:12px 24px; font-size:0.9rem;">Akzeptieren</button></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
