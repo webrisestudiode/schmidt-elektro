@@ -323,7 +323,7 @@ p {
     gap: 20px;
   }
 
-  .nav-links.active {
+  .nav-links.open {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
@@ -369,6 +369,7 @@ p {
 .hero-content {
   position: relative;
   z-index: 2;
+  margin: 0 auto;
 }
 
 .trust-badges-hero {
@@ -391,6 +392,7 @@ p {
   font-weight: 500;
   font-size: 0.95rem;
   transition: var(--transition);
+  margin: 0 auto;
 }
 
 .trust-badge:hover {
@@ -406,6 +408,7 @@ p {
 .rating-badge {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   background: rgba(255,255,255,0.15);
   border: 1px solid rgba(255,255,255,0.3);
@@ -416,6 +419,8 @@ p {
   font-weight: 700;
   margin-bottom: 36px;
   backdrop-filter: blur(10px);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rating-badge .stars {
@@ -1477,11 +1482,29 @@ select.form-control {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero { padding: 70px 0 100px; }
+  .hero { 
+    padding: 70px 0 100px;
+    text-align: center;
+  }
+  .hero-content {
+    margin: 0 auto;
+  }
+  .hero h1, .hero p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .trust-badges-hero {
+    justify-content: center;
+  }
+  .rating-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .multi-step-form { padding: 28px 20px; }
   .brands-grid { gap: 28px; }
   .brand-item { font-size: 1.1rem; }
   .service-selection-grid { grid-template-columns: repeat(2, 1fr); }
   .form-actions { flex-direction: column; }
-  .trust-badge { font-size: 0.85rem; padding: 8px 14px; }
+  .trust-badge { font-size: 0.85rem; padding: 8px 14px; margin: 0; }
 }

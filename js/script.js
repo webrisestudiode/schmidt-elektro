@@ -1,20 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- Mobile Menu Toggle ---
-    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
 
-    if (mobileBtn && navLinks) {
-        mobileBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            const isOpen = navLinks.classList.contains('active');
-            mobileBtn.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            const isOpen = navLinks.classList.contains('open');
+            mobileMenuBtn.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
         });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            });
+        });
+
         // Close menu clicking outside
         document.addEventListener('click', (e) => {
-            if (!mobileBtn.contains(e.target) && !navLinks.contains(e.target)) {
-                navLinks.classList.remove('active');
-                mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            if (!mobileMenuBtn.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('open');
+                mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
             }
         });
     }
@@ -112,14 +120,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 currentStep++;
                 updateForm();
-                window.scrollTo({ top: document.querySelector('.multi-step-form').offsetTop - 120, behavior: 'smooth' });
+                document.querySelector('.multi-step-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
         prevBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 currentStep--;
                 updateForm();
-                window.scrollTo({ top: document.querySelector('.multi-step-form').offsetTop - 120, behavior: 'smooth' });
+                document.querySelector('.multi-step-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
     }
