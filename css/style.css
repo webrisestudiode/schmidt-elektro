@@ -1514,40 +1514,144 @@ select.form-control {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero { 
-    padding: 70px 0 100px;
-    text-align: center;
-    width: 100%;
+  body, .container, .hero, .hero-content {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
   }
+
+  .hero { 
+    padding: 60px 0 80px;
+    text-align: center;
+    width: 100% !important;
+    overflow: hidden;
+  }
+
   .hero-content {
-    width: 100%;
+    width: 100% !important;
     margin: 0 auto;
     text-align: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .hero-content * {
+
+  .hero-content h1, 
+  .hero-content p, 
+  .hero-content .rating-badge, 
+  .hero-content .trust-badges-hero,
+  .hero-content .btn-lg {
     text-align: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    padding-left: 0 !important;
   }
+
   .rating-badge {
     display: inline-flex !important;
-    margin-bottom: 30px !important;
-  }
-  .hero h1 {
-    margin-bottom: 20px !important;
-  }
-  .hero p {
-    margin-bottom: 30px !important;
-  }
-  .trust-badges-hero {
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 40px !important;
+    align-items: center;
+    padding: 10px 20px !important;
+    margin-bottom: 25px !important;
+    max-width: 95%;
+    gap: 8px !important;
+    font-size: 0.95rem !important;
+    white-space: normal !important;
   }
+
+  .hero h1 {
+    font-size: clamp(1.8rem, 8vw, 2.4rem) !important;
+    margin-bottom: 15px !important;
+    line-height: 1.2;
+    padding: 0 10px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .hero p {
+    font-size: 1.1rem !important;
+    margin-bottom: 30px !important;
+    padding: 0 15px !important;
+    width: 100% !important;
+    color: rgba(255,255,255,0.95) !important;
+  }
+
+  .hero .btn-lg {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 0 auto !important;
+    font-size: 1.1rem !important;
+    padding: 16px 24px !important;
+  }
+
+  .trust-badges-hero {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    margin-top: 40px !important;
+    width: 100% !important;
+  }
+
+  .trust-badge {
+    font-size: 0.85rem !important;
+    padding: 8px 16px !important;
+    margin: 0 !important;
+    white-space: normal !important;
+    flex-wrap: wrap !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: auto !important;
+    min-width: 140px;
+    border-radius: 50px !important;
+  }
+
+  .emergency-banner {
+    font-size: 0.85rem !important;
+    padding: 10px 15px !important;
+    line-height: 1.4;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+    text-align: center !important;
+  }
+
+  .footer-logo {
+    justify-content: center !important;
+  }
+
+  .footer-contact-item {
+    justify-content: center !important;
+    text-align: center !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .footer-contact-item i {
+    margin-top: 0;
+  }
+
+  .footer-links {
+    text-align: center !important;
+  }
+
+  .footer h4 {
+    text-align: center !important;
+  }
+
   .multi-step-form { padding: 28px 20px; }
   .brands-grid { gap: 28px; }
   .brand-item { font-size: 1.1rem; }
   .service-selection-grid { grid-template-columns: repeat(2, 1fr); }
   .form-actions { flex-direction: column; }
-  .trust-badge { font-size: 0.85rem; padding: 8px 14px; margin: 0; }
 }
