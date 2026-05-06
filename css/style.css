@@ -1517,21 +1517,32 @@ select.form-control {
   .hero { 
     padding: 70px 0 100px;
     text-align: center;
+    width: 100%;
   }
   .hero-content {
+    width: 100%;
     margin: 0 auto;
-  }
-  .hero h1, .hero p {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  .hero-content * {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+  }
+  .rating-badge {
+    display: inline-flex !important;
+    margin-bottom: 30px !important;
+  }
+  .hero h1 {
+    margin-bottom: 20px !important;
+  }
+  .hero p {
+    margin-bottom: 30px !important;
   }
   .trust-badges-hero {
     justify-content: center;
-  }
-  .rating-badge {
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 40px !important;
   }
   .multi-step-form { padding: 28px 20px; }
   .brands-grid { gap: 28px; }
