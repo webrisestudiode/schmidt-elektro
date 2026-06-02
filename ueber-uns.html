@@ -14,8 +14,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webrisestudiode.github.io/schmidt-elektro/ueber-uns.html">
+  <meta property="og:title" content="Über uns – Schmidt Elektro München">
+  <meta property="og:description" content="Schmidt Elektro – Familiengeführter Elektromeisterbetrieb aus München mit über 20 Jahren Erfahrung. Lernen Sie unser Team kennen.">
+  <meta property="og:image" content="https://webrisestudiode.github.io/schmidt-elektro/img/pv-anlage.webp">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
+
+<!-- Personalisierter Demo-Banner -->
+<div id="personalized-banner" style="display:none; background:linear-gradient(90deg,#1a2332,#2d3f52); color:white; text-align:center; padding:10px 20px; font-size:0.9rem; font-weight:600; letter-spacing:0.01em; position:relative; z-index:9999; border-bottom:3px solid #EAB308;">
+  <i class="fa-solid fa-bolt" style="color:#EAB308; margin-right:8px;"></i>
+  Guten Tag Herr/Frau <span id="banner-name" style="font-weight:800;"></span> – so könnte die Website von <strong id="banner-firma"></strong> aussehen &nbsp;·&nbsp;
+  <a href="https://webrisestudio.de/kontakt.html" target="_blank" style="color:#EAB308;text-decoration:underline;font-weight:700;">Website anfragen →</a>
+</div>
+<script>
+(function(){var p=new URLSearchParams(window.location.search),f=p.get('firma'),n=p.get('name');if(f&&n){var b=document.getElementById('personalized-banner');if(b){document.getElementById('banner-firma').textContent=f;document.getElementById('banner-name').textContent=n;b.style.display='block';}}})();
+</script>
 
     <!-- Notdienst Banner -->
     <div class="emergency-banner">
@@ -216,7 +233,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">&copy; 2026 Schmidt Elektro München. Fiktives Beispielprojekt.</div>
+            <div class="footer-bottom">&copy; 2026 Schmidt Elektro München. Dies ist eine Beispiel-Website erstellt von <a href="https://webrisestudio.de" target="_blank" style="color:var(--color-primary);">Webrise Studio</a>.</div>
         </div>
     </footer>
 

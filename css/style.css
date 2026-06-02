@@ -1,7 +1,7 @@
 :root {
-  --color-primary: #E8120A;
-  --color-primary-dark: #C00D05;
-  --color-primary-light: #FDE8E7;
+  --color-primary: #EAB308;
+  --color-primary-dark: #CA8A04;
+  --color-primary-light: #FEF9C3;
   --color-dark: #1A1A1A;
   --color-dark-gray: #2A2A2A;
   --color-gray: #767676;
@@ -143,14 +143,14 @@ p {
 
 .btn-primary {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: #1a1a1a;
 }
 
 .btn-primary:hover {
   background-color: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(232, 18, 10, 0.3);
-  color: var(--color-white);
+  box-shadow: 0 10px 25px rgba(234, 179, 8, 0.3);
+  color: #1a1a1a;
 }
 
 .btn-outline {
@@ -189,7 +189,7 @@ p {
 
 /* Emergency Banner */
 .emergency-banner {
-  background-color: var(--color-primary-dark);
+  background: #1a2332;
   color: white;
   text-align: center;
   padding: 12px 20px;
@@ -206,9 +206,9 @@ p {
 }
 
 @keyframes pulse-banner {
-  0% { background-color: var(--color-primary-dark); }
-  50% { background-color: var(--color-primary); }
-  100% { background-color: var(--color-primary-dark); }
+  0% { background: #1a2332; }
+  50% { background: #2d3f52; }
+  100% { background: #1a2332; }
 }
 
 /* Navigation */
@@ -370,8 +370,7 @@ p {
 .hero {
   position: relative;
   padding: 110px 0 150px;
-  background: linear-gradient(135deg, rgba(26,26,26,0.88) 0%, rgba(30,5,5,0.82) 100%),
-              url('../img/ueber-uns-und-karriere.jpg') center/cover no-repeat;
+  background: linear-gradient(135deg, #1a2332 0%, #0d1520 100%);
   color: var(--color-white);
   text-align: center;
   overflow: hidden;

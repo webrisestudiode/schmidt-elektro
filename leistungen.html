@@ -14,8 +14,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webrisestudiode.github.io/schmidt-elektro/leistungen.html">
+  <meta property="og:title" content="Leistungen – Schmidt Elektro München">
+  <meta property="og:description" content="Alle Leistungen von Schmidt Elektro: Elektroinstallation, Photovoltaik, Wallbox, Smart Home, Beleuchtung & 24/7 Notdienst. Jetzt Festpreisangebot anfragen.">
+  <meta property="og:image" content="https://webrisestudiode.github.io/schmidt-elektro/img/pv-anlage.webp">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
+
+<!-- Personalisierter Demo-Banner -->
+<div id="personalized-banner" style="display:none; background:linear-gradient(90deg,#1a2332,#2d3f52); color:white; text-align:center; padding:10px 20px; font-size:0.9rem; font-weight:600; letter-spacing:0.01em; position:relative; z-index:9999; border-bottom:3px solid #EAB308;">
+  <i class="fa-solid fa-bolt" style="color:#EAB308; margin-right:8px;"></i>
+  Guten Tag Herr/Frau <span id="banner-name" style="font-weight:800;"></span> – so könnte die Website von <strong id="banner-firma"></strong> aussehen &nbsp;·&nbsp;
+  <a href="https://webrisestudio.de/kontakt.html" target="_blank" style="color:#EAB308;text-decoration:underline;font-weight:700;">Website anfragen →</a>
+</div>
+<script>
+(function(){var p=new URLSearchParams(window.location.search),f=p.get('firma'),n=p.get('name');if(f&&n){var b=document.getElementById('personalized-banner');if(b){document.getElementById('banner-firma').textContent=f;document.getElementById('banner-name').textContent=n;b.style.display='block';}}})();
+</script>
 
     <!-- Notdienst Banner -->
     <div class="emergency-banner">
@@ -48,6 +65,10 @@
         <div class="container">
             <h1>Unsere Leistungen</h1>
             <div class="breadcrumb"><a href="index.html">Startseite</a><span class="breadcrumb-sep">/</span> Leistungen</div>
+            <div class="animate-on-scroll" style="margin-top:24px; display:inline-flex; align-items:center; gap:10px; background:rgba(234,179,8,0.15); border:1px solid rgba(234,179,8,0.4); border-radius:10px; padding:10px 20px; font-size:0.95rem; font-weight:600; color:white;">
+                <i class="fa-solid fa-file-invoice" style="color:#EAB308; font-size:1.1rem;"></i>
+                Kostenloses Angebot innerhalb von 24h – unverbindlich &amp; transparent
+            </div>
         </div>
     </section>
 
@@ -83,9 +104,11 @@
 
                 <!-- 2. Photovoltaik -->
                 <div class="service-card animate-on-scroll" style="transition-delay:0.1s;" id="photovoltaik">
-                    <div class="service-card-img-wrap" style="display: flex; gap: 4px;">
-                        <img src="img/PV-Anlage.webp" alt="Photovoltaik Solar München" class="service-card-img" loading="lazy" style="width: 50%; object-fit: cover;" width="1408" height="768" >
-                        <img src="img/pv-flachdach.webp" alt="Photovoltaik Flachdachanlage" class="service-card-img" loading="lazy" style="width: 50%; object-fit: cover;" width="1408" height="768" >
+                    <div class="service-card-img-wrap">
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; height:280px; border-radius:12px; overflow:hidden;">
+                            <img src="img/PV-Anlage.webp" alt="Photovoltaik Solar München" class="service-card-img" loading="lazy" style="width:100%; height:100%; object-fit:cover;" width="1408" height="768">
+                            <img src="img/pv-flachdach.webp" alt="Photovoltaik Flachdachanlage" class="service-card-img" loading="lazy" style="width:100%; height:100%; object-fit:cover;" width="1408" height="768">
+                        </div>
                     </div>
                     <div class="service-card-body">
                         <div class="service-card-icon"><i class="fa-solid fa-solar-panel"></i></div>
@@ -123,7 +146,7 @@
                 <!-- 4. Smart Home -->
                 <div class="service-card animate-on-scroll" style="transition-delay:0.1s;" id="smarthome">
                     <div class="service-card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1200&auto=format&fit=crop" alt="Smart Home Steuerung München" class="service-card-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&auto=format&fit=crop" alt="Smart Home Steuerung – Licht, Heizung und Sicherheit vom Smartphone" class="service-card-img" loading="lazy">
                     </div>
                     <div class="service-card-body">
                         <div class="service-card-icon"><i class="fa-solid fa-house-signal"></i></div>
@@ -244,7 +267,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">&copy; 2026 Schmidt Elektro München. Fiktives Beispielprojekt.</div>
+            <div class="footer-bottom">&copy; 2026 Schmidt Elektro München. Dies ist eine Beispiel-Website erstellt von <a href="https://webrisestudio.de" target="_blank" style="color:var(--color-primary);">Webrise Studio</a>.</div>
         </div>
     </footer>
 
