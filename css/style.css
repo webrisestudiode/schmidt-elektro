@@ -370,7 +370,7 @@ p {
 .hero {
   position: relative;
   padding: 110px 0 150px;
-  background: linear-gradient(135deg, #1a2332 0%, #0d1520 100%);
+  background: linear-gradient(rgba(13, 21, 32, 0.78), rgba(13, 21, 32, 0.78)), url('img/chef.jpg') center/cover no-repeat;
   color: var(--color-white);
   text-align: center;
   overflow: hidden;
