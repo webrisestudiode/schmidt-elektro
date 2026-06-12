@@ -1,4 +1,4 @@
-html { overflow-x: hidden; }
+html { overflow-x: clip; }
 :root {
   --color-primary: #EAB308;
   --color-primary-dark: #CA8A04;
@@ -1658,4 +1658,16 @@ select.form-control {
   .brand-item { font-size: 1.1rem; }
   .service-selection-grid { grid-template-columns: repeat(2, 1fr); }
   .form-actions { flex-direction: column; }
+  /* Personalisierter Banner: kleinere Schrift */
+  #personalized-banner { font-size: 0.75rem !important; padding: 8px 12px !important; }
+  /* Navbar: Firmenname kleiner/umbrechen */
+  .logo { font-size: 1rem !important; white-space: normal; word-break: break-word; max-width: calc(100% - 60px); }
+  .logo span { display: inline; }
+  /* Notdienst Banner: Text umbrechen */
+  .emergency-banner { white-space: normal; word-wrap: break-word; font-size: 0.82rem; padding: 8px 12px; }
+  /* Alle Buttons volle Breite */
+  .btn { width: 100% !important; justify-content: center !important; }
+  /* Formulare volle Breite */
+  .form-row { grid-template-columns: 1fr !important; }
+  input, select, textarea { width: 100% !important; box-sizing: border-box !important; }
 }
